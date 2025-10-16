@@ -1,0 +1,115 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+body{
+  padding-top: 170px;
+  font-family: Microsoft JhengHei,DFKai-SB,Georgia;
+}
+header{
+  height: 120px;
+  background-color: cadetblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-family: Microsoft JhengHei,DFKai-SB,Georgia;
+}
+.head{
+  color: aliceblue;
+  text-decoration: none;
+}
+.head:hover{
+  text-decoration: underline;
+}
+.sidebar{
+  height: 50px;
+  background-color: ivory;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-family: Microsoft JhengHei,DFKai-SB,Georgia;
+}
+.sidebar .nav-link {
+  color: #0557aa;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.sidebar .nav-link:hover {
+  text-decoration: underline;
+}
+.sidebar .nav-link.active {
+  background-color: #0d6efd; /* Bootstrap primary */
+  color: white !important;
+  border-radius: 5px;
+}
+.sidebar .nav-link.active::before {
+  content: "➤";
+  margin-right: 8px;
+  color: white;
+}
+a:visited {
+  color: purple; /* 已訪問顏色 */
+}
+/* .content{
+  margin-top: 170px;
+  left: 0;
+  right: 0;
+  max-height: fit-content;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 1rem;
+} */
+.section{
+  background-color: aliceblue;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0,1);
+}
+.file-list{
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-top: 1.5rem;
+  color: #444;
+}
+.file-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+table{
+  border-collapse: collapse;
+  border: 2px solid black;
+  font-family: Microsoft JhengHei,DFKai-SB,Georgia;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+thead{
+  background-color: rgb(119, 156, 206) !important;
+  font-family: Microsoft JhengHei,DFKai-SB,Georgia;
+}
+tbody{
+  background-color: powderblue;
+  font-family: Microsoft JhengHei,DFKai-SB,Georgia;
+}
+th,td{
+  border: 2px solid black;
+  padding: 10px 10px;
+  font-family: Microsoft JhengHei,DFKai-SB,Georgia;
+}
