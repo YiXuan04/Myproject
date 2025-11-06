@@ -17,7 +17,7 @@
         }
         ?>
         <div class="section">
-            <h3>入學招生即授予學位辦法</h3>
+            <h3>入學招生及授予學位辦法</h3>
             <?php
             include_once 'list_file_m.php'; 
             renderList($conn, "filelist0");

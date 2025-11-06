@@ -17,7 +17,7 @@
         }
         ?>
         <div class="section" id="30">
-            <h3>入學招生即授予學位辦法</h3>
+            <h3>入學招生及授予學位辦法</h3>
             <form action="upload_master.php" method="post" enctype="multipart/form-data">
                 <label for="Upload0">Select file to upload:</label>
                 <input type="file" name="Upload0" id="Upload0">
