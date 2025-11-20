@@ -452,6 +452,156 @@
                         ?>
                     </td>
                 </tr>
+                <tr>
+                    <th scope="row">物聯網</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4106">Select file to upload:</label>
+                            <input type="file" name="Upload4106" id="Upload4106">
+                            <input type="submit" value="上傳" name="submit4106">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4106");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">機器人作業系統</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4107">Select file to upload:</label>
+                            <input type="file" name="Upload4107" id="Upload4107">
+                            <input type="submit" value="上傳" name="submit4107">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4107");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">下世代行動通訊網路</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4108">Select file to upload:</label>
+                            <input type="file" name="Upload4108" id="Upload4108">
+                            <input type="submit" value="上傳" name="submit4108">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4108");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">機器學習</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4109">Select file to upload:</label>
+                            <input type="file" name="Upload4109" id="Upload4109">
+                            <input type="submit" value="上傳" name="submit4109">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4109");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">智慧型最佳化演算法</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4110">Select file to upload:</label>
+                            <input type="file" name="Upload4110" id="Upload4110">
+                            <input type="submit" value="上傳" name="submit4110">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4110");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">巨量資料分析</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4111">Select file to upload:</label>
+                            <input type="file" name="Upload4111" id="Upload4111">
+                            <input type="submit" value="上傳" name="submit4111">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4111");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">新一代Web技術</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4112">Select file to upload:</label>
+                            <input type="file" name="Upload4112" id="Upload4112">
+                            <input type="submit" value="上傳" name="submit4112">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4112");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">雲端大數據安全</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4113">Select file to upload:</label>
+                            <input type="file" name="Upload4113" id="Upload4113">
+                            <input type="submit" value="上傳" name="submit4113">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4113");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">高等人工智慧</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4114">Select file to upload:</label>
+                            <input type="file" name="Upload4114" id="Upload4114">
+                            <input type="submit" value="上傳" name="submit4114">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4114");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">雲端作業系統</th>
+                    <td>
+                        <form action="upload_master.php" method="post" enctype="multipart/form-data">
+                            <label for="Upload4115">Select file to upload:</label>
+                            <input type="file" name="Upload4115" id="Upload4115">
+                            <input type="submit" value="上傳" name="submit4115">
+                            <input type="hidden" name="scrollTo" value="34">
+                        </form>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4115");
+                        ?>
+                    </td>
+                </tr>
                 </tbody>
             </table>
             <br>

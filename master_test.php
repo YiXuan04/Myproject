@@ -300,14 +300,104 @@
                         ?>
                     </td>
                 </tr>
+                <tr>
+                    <th scope="row">物聯網</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4106");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">機器人作業系統</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4107");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">下世代行動通訊網路</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4108");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">機器學習</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4109");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">智慧型最佳化演算法</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4110");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">巨量資料分析</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4111");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">新一代Web技術</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4112");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">雲端大數據安全</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4113");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">高等人工智慧</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4114");
+                        ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">雲端作業系統</th>
+                    <td>
+                        <?php
+                        include_once 'list_file_m.php'; 
+                        renderList($conn, "filelist4115");
+                        ?>
+                    </td>
+                </tr>
                 </tbody>
             </table>
             <br>
             <h4>(2)研究生體驗產業界情況的相關紀錄</h4>
-            <!-- <?php
+            <?php
                 include_once 'list_file_m.php'; 
                 renderList($conn, "filelist42");
-            ?> -->
+            ?>
         </div>
         <div class="section">
             <h3>認證規範5:教師</h3>

@@ -1015,6 +1015,366 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
     }
     header("Location:index.php?page=page2#$scrollTo");
   }
+  if(isset($_POST['submit4106'])&&isset($_FILES['Upload4106'])){
+    $uploadOk = 1;
+    $category ="filelist4106";
+    $target_dir="uploads/master/Rule4/filelist1/06/";
+    $filename = basename($_FILES["Upload4106"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4106"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4106"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4107'])&&isset($_FILES['Upload4107'])){
+    $uploadOk = 1;
+    $category ="filelist4107";
+    $target_dir="uploads/master/Rule4/filelist1/07/";
+    $filename = basename($_FILES["Upload4107"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4107"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4107"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4108'])&&isset($_FILES['Upload4108'])){
+    $uploadOk = 1;
+    $category ="filelist4108";
+    $target_dir="uploads/master/Rule4/filelist1/08/";
+    $filename = basename($_FILES["Upload4108"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4108"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4108"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4109'])&&isset($_FILES['Upload4109'])){
+    $uploadOk = 1;
+    $category ="filelist4109";
+    $target_dir="uploads/master/Rule4/filelist1/09/";
+    $filename = basename($_FILES["Upload4109"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4109"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4109"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4110'])&&isset($_FILES['Upload4110'])){
+    $uploadOk = 1;
+    $category ="filelist4110";
+    $target_dir="uploads/master/Rule4/filelist1/10/";
+    $filename = basename($_FILES["Upload4110"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4110"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4110"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4111'])&&isset($_FILES['Upload4111'])){
+    $uploadOk = 1;
+    $category ="filelist4111";
+    $target_dir="uploads/master/Rule4/filelist1/11/";
+    $filename = basename($_FILES["Upload4111"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4111"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4111"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4112'])&&isset($_FILES['Upload4112'])){
+    $uploadOk = 1;
+    $category ="filelist4112";
+    $target_dir="uploads/master/Rule4/filelist1/12/";
+    $filename = basename($_FILES["Upload4112"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4112"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4112"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4113'])&&isset($_FILES['Upload4113'])){
+    $uploadOk = 1;
+    $category ="filelist4113";
+    $target_dir="uploads/master/Rule4/filelist1/13/";
+    $filename = basename($_FILES["Upload4113"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4113"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4113"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4114'])&&isset($_FILES['Upload4114'])){
+    $uploadOk = 1;
+    $category ="filelist4114";
+    $target_dir="uploads/master/Rule4/filelist1/14/";
+    $filename = basename($_FILES["Upload4114"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4114"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4114"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
+  if(isset($_POST['submit4115'])&&isset($_FILES['Upload4115'])){
+    $uploadOk = 1;
+    $category ="filelist4115";
+    $target_dir="uploads/master/Rule4/filelist1/15/";
+    $filename = basename($_FILES["Upload4115"]["name"]);
+    $target_file = $target_dir . $filename;
+    $FileType=strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $scrollTo = $_POST['scrollTo'];
+    //檢查是否已存在
+    if (file_exists($target_file)) {
+      echo "Sorry, file already exists.";
+      $uploadOk = 0;
+    }
+    if ($_FILES["Upload4115"]["size"] > 100*1024*1024) {
+      echo "Sorry, your file is too large.";
+      $uploadOk = 0;
+    }
+    if ($uploadOk) {
+      if (move_uploaded_file($_FILES["Upload4115"]["tmp_name"], $target_file)) {
+      // 寫入資料庫
+      $stmt = $conn->prepare("INSERT INTO uploads2 (filename, filepath, category) VALUES (?, ?, ?)");
+        if ($stmt) {
+          $stmt->bind_param("sss", $filename, $target_file, $category);
+          $stmt->execute();
+          $stmt->close();
+          echo "✅ 上傳成功並寫入資料庫！";
+        } else {
+          unlink($target_file); // 刪除搬進來的檔案
+          echo "❌ 資料庫寫入失敗，檔案已移除。";
+        }
+      } else {
+        echo "❌ 檔案搬移失敗（upload failed）。";
+      }
+    }
+    header("Location:index.php?page=page2#$scrollTo");
+  }
   if(isset($_POST['submit42'])&&isset($_FILES['Upload42'])){
     $uploadOk = 1;
     $category ="filelist42";
